@@ -1,0 +1,8 @@
+[Unit]
+Description=confd
+
+[Service]
+User=root
+Environment="CONFD_BACKEND=etcd"
+Environment="CONFD_OPTS=-node 127.0.0.1:4001 -watch"
+ExecStart=/usr/bin/confd -backend $CONFD_BACKEND $CONFD_OPTS

@@ -1,0 +1,6 @@
+# Go madness, I know
+confd: statically-linked-binary usr/bin/confd
+# This is a shitty binary-only package
+confd: new-package-should-close-itp-bug
+# We're hipsters, who needs a man page?
+confd: binary-without-manpage usr/bin/confd

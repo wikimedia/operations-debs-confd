@@ -1,0 +1,12 @@
+Package: confd
+Version: 0.9.0-2
+Section: devel
+Priority: extra
+Depends: golang
+Architecture: amd64
+Maintainer: Giuseppe Lavagetto <glavagetto@wikimedia.org>
+Description: Lightweight configuration management tool
+ This tool allows one to keep local configuration files up-to-date using
+ data stored in etcd, consul, or env vars and processing template
+ resources. It also takes care of reloading applications to pick up
+ new config file changes.
