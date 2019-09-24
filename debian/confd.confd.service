@@ -1,0 +1,13 @@
+[Unit]
+Description=confd
+
+[Service]
+User=root
+# Configuration needs to be provided in a toml file, please see 
+# https://github.com/kelseyhightower/confd/blob/v0.16.0/docs/configuration-guide.md
+ExecStart=/usr/bin/confd
+Restart=on-failure
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target

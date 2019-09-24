@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+override_dh_auto_install:
+	dh_auto_install -- --no-source
+	rm -rf $(CURDIR)/debian/confd/usr/bin/ssm $(CURDIR)/debian/confd/usr/bin/zookeeper
+
+
+%:
+	dh $@ --builddirectory=_build --buildsystem=golang --with=golang
