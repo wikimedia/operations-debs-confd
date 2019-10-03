@@ -1,5 +1,5 @@
 confd (0.16.0-1) UNRELEASED; urgency=medium
 
-  * New version, with a proper debian package (Closes: TODO)
+  * New version, with a proper debian package (Closes: T147204)
 
  -- Giuseppe Lavagetto <glavagetto@wikimedia.org>  Tue, 24 Sep 2019 16:25:36 +0200
